@@ -5,6 +5,10 @@ public class Digitcount{
         System.out.println("Enter the number: ");
         int n=sc.nextInt();
         int count=0;
+        if(n==0){
+            System.out.println("The count is: 1");
+            return ;
+        }
         while(n>0){
             n/=10;
             count++;
